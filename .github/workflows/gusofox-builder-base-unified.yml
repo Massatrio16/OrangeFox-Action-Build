@@ -24,7 +24,7 @@ on:
       DEVICE_TREE_BRANCH:
         description: 'OrangeFox Device Tree Branch'
         required: true
-        default: 'android-12.1'
+        default: 'android-12.4'
       DEVICE_PATH:
         description: 'Specify your Device Path'
         required: true
@@ -32,7 +32,7 @@ on:
       DEVICE_NAME:
         description: 'Specify your Device Codename'
         required: true
-        default: 'S6665L'
+        default: 'S665L'
       BUILD_TARGET:
         description: 'Specify your Build Target'
         required: true
@@ -106,7 +106,7 @@ jobs:
 
         # Sending the curl request: 
         curl -X POST -H 'Content-Type: application/json' \
-        -d '{"chat_id": "-1002082174650", "text": "New TWRP Will Be Build : by https://github.com/${{ github.actor }} > Building Start"}' \
+        -d '{"chat_id": "-1002082174650", "text": "New OFRP Will Be Build For Device ${{ inputs.DEVICE_NAME }} > Building Start"}' \
         https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage
 
     - name: Building OrangeFox
