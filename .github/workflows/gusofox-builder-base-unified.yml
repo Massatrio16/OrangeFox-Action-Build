@@ -144,6 +144,6 @@ jobs:
 
         # Sending the curl request: 
         curl -X POST -H 'Content-Type: application/json' \
-        -d '{"chat_id": "-1002082174650", "text": "Succesed, Click To Download & Test", "reply_markup": {"inline_keyboard": [[{"text":"Download Here : ${{ github.run_id }}", "url": "https://github.com/Massatrio16/OrangeFox-Action-Build/releases/download/${{ github.run_id }}/OrangeFox-OrangeFox-Unofficial-${{ inputs.DEVICE_NAME }}.img"}]]} }' \
+        -d '{"chat_id": "-1002082174650", "text": "Succesed, Click To Download & Test", "reply_markup": {"inline_keyboard": [[{"text":"Download Here : ${{ github.run_id }}", "url": "https://github.com/Massatrio16/OrangeFox-Action-Build/releases/download/${{ github.run_id }}/OrangeFox-Unofficial-${{ inputs.DEVICE_NAME }}.img"}]]} }' \
         https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage
         
